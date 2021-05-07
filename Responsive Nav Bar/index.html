@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <script src="https://kit.fontawesome.com/fdbef135e9.js" 
+        crossorigin="anonymous">
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Elesy.</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }
+                    else {
+                        $(".item").addClass("active");
+                    }
+                })
+
+
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Elesy.</a></li>
+                <li class="item"><a href="#"><i class="fas fa-home"></i></a></li>
+                <li class="item"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                <li class="item"><a href="#"><i class="fas fa-tools"></i></a></li>
+                <li class="item button"><a href="#"><i class="far fa-user"></i></a></li>
+                <li class="item button secondary"><a href="#">Sign Up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>   
+        </nav>
+
+        <div class="sample">
+            <img src="annie-spratt-NrflUuJJK0I-unsplash.jpg" alt="">
+        </div>
+
+        
+        <main>
+            <a href="#" style="position: fixed;bottom:0;">www.instagram.com/elesyscarves</a>
+        </main>
+    </body>
+
+</html>
